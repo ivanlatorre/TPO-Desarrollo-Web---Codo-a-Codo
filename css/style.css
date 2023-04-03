@@ -55,7 +55,7 @@ body{
     display: grid;
     gap: 5px;/*Separacion de los elementos*/
     grid-template: /*Nombres para las areas*/
-        "header"    auto 
+        "header"    30px
         "izquierda" 100px
         "main"      auto 
         "derecha"   100px
