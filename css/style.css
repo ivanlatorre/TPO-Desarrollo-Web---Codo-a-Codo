@@ -85,6 +85,7 @@ body{
     line-height: 80px;
     align-items: center;
 }
+
 .nav-menu{
     display: flex;
     margin-right: 40px;
@@ -103,7 +104,8 @@ body{
    border-radius: 3px;
 
 }
-.nav-menu-link:hover
+.nav-menu-link:hover,
+.nav-menu-link_active
 {
     background-color: #917250;
     transition: 0.5s;
@@ -129,17 +131,15 @@ body{
 
 /*Adaptacion a distintas pantallas*/
 @media(max-width: 768px){
-    body{
-       padding-top: 70px; 
-    }
     .header{
-        height: 60px;
+        height: 30px;
     }
     .logo{
         font-size: 25px;
         padding: 0 20px;
-        line-height: 60;
+        line-height: 60px;
     }
+}
     .nav-menu{
       flex-direction: column;
       align-items: center;
@@ -165,13 +165,16 @@ body{
     }
     .nav-toggle{
         display: block;
+        position: absolute;
+        right:40px;
+        margin-bottom: 26px;
     }
     .nav-menu_visible{
         left: 0;
-    }
+        top: 30px;
 }
 
-@media (min-width:600px){
+@media (min-width:768px){
     .container{
         /* ordenar las tablas del grid tempalte, respetar las columnas y su posición*/
         grid-template: 
@@ -179,7 +182,7 @@ body{
         "izquierda main" auto
         "derecha derecha" 100px
         "footer footer"  50px /
-        200px   auto;
+        100px   auto;
         /* orden de las areas Prestar atención a las " " */
         /* la Altura va a la derecha y el Ancho despues del / respetando el orden de las columnas*/
     }
