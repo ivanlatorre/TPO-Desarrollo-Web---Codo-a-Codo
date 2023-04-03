@@ -25,11 +25,10 @@ body{
 
 /*grid-area: Nombre definido en el container*/
 .header {
-
+    display: flex;
     grid-area: header;
     background-color: #614c35;
     height: 30px;
-    
     position: fixed;
     width: 100%;
     top: 0;
@@ -81,7 +80,7 @@ body{
     /* padding-bottom: 65px; */
     font-size: 30px;
     font-weight: bold;
-    margin-top: -11px;
+    margin-bottom: 75px;
     padding: 0 40px;
     line-height: 80px;
     align-items: center;
@@ -90,6 +89,7 @@ body{
     display: flex;
     margin-right: 40px;
     list-style: none;/*puntos de las listas*/
+    margin-bottom: 90px;
 }
 .nav-menu-item{
     font-size: 18px;
