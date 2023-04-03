@@ -104,8 +104,7 @@ body{
    border-radius: 3px;
 
 }
-.nav-menu-link:hover,
-.nav-menu-link_active
+.nav-menu-link:hover
 {
     background-color: #917250;
     transition: 0.5s;
