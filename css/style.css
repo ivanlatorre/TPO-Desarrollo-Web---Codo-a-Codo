@@ -84,7 +84,7 @@ body{
     /* padding-bottom: 65px; */
     /* font-size: 30px; */
     /* font-weight: bold; */
-    margin-bottom: 55px;
+    margin-bottom: 48px;
     padding: 0 40px;
     line-height: 80px;
     align-items: center;
@@ -142,6 +142,10 @@ body{
         
         padding: 0 20px;
         
+    }
+    .logo img{
+        height: 3.5vh;
+        margin-bottom: 4px;
     }
 
     .nav-menu{
