@@ -16,6 +16,7 @@ body{
 
 
 /* Estilos de clases */
+
 .container > *{
     box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
     border-radius: 4px;
@@ -28,12 +29,15 @@ body{
     display: flex;
     grid-area: header;
     background-color: #614c35;
-    height: 30px;
+    height: 35px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     
+}
+.header img {
+    height: 4vh;
 }
 .main {
     grid-area: main;
@@ -78,9 +82,9 @@ body{
 }
 .logo{
     /* padding-bottom: 65px; */
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 75px;
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    margin-bottom: 55px;
     padding: 0 40px;
     line-height: 80px;
     align-items: center;
@@ -135,9 +139,9 @@ body{
         height: 30px;
     }
     .logo{
-        font-size: 25px;
+        
         padding: 0 20px;
-        line-height: 60px;
+        
     }
 
     .nav-menu{
