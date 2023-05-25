@@ -13,6 +13,7 @@ body{
     min-height: 100%;/*para q use el 100% de la pagina*/
     /* padding: 90px 20px 0; */
     cursor: url(../img/mause1.png),auto;
+    min-height: 100vh;
 }
 
 
@@ -40,6 +41,7 @@ body{
 }
 .header img {
     height: 4vh;
+    margin-bottom: 5px;
 }
 .main {
     grid-area: main;
@@ -77,7 +79,7 @@ body{
    justify-content: space-between;
    margin-top:0px;
    max-width: 992px;
-   margin: 0 auto;
+   margin: 43px auto;
    align-items: center;
 }
 .nav-link{
