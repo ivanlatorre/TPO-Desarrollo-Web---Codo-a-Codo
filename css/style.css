@@ -171,7 +171,7 @@ body{
     }
     .logo img{
         height: 3.5vh;
-        margin-bottom: 4px;
+        margin-bottom: 10px;
     }
 
     .nav-menu{
@@ -206,6 +206,9 @@ body{
     .nav-menu_visible{
         left: 0;
         top: 30px;
+    }
+    .material-symbols-outlined{
+        margin-bottom: 68px;
     }
 }
 
