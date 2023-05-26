@@ -14,6 +14,11 @@ body{
     /* padding: 90px 20px 0; */
     cursor: url(../img/mause1.png),auto;
     min-height: 100vh;
+    background-color: aqua;
+    background-image: linear-gradient( rgba(131,58,180,1) 0%, rgba(253,29,29,0.8225665266106442) 50%, rgba(252,176,69,1) 100%), url(../img/catbird\ image1.png);
+    background-size: 30%;
+    
+
 }
 
 
@@ -67,8 +72,8 @@ body{
     gap: 5px;/*Separacion de los elementos*/
     grid-template: /*Nombres para las areas*/
         "header"    30px
-        "izquierda" 100px
         "main"      auto 
+        "izquierda" 100px
         "derecha"   100px
         "footer"    50px;
 
@@ -135,8 +140,8 @@ body{
     text-align: center;
 }
 .main .contenedor img {
-    width: 40%;
-    height: 50%;
+    /* width: 40%;
+    height: 50%; */
     border-radius: 50%;
 
 }
@@ -217,8 +222,9 @@ body{
         /* ordenar las tablas del grid tempalte, respetar las columnas y su posición*/
         grid-template: 
         "header header"  30px 
-        "izquierda main" auto
+        "main main" auto
         "derecha derecha" 100px
+        "izquierda izquierda" 100px
         "footer footer"  50px /
         100px   auto;
         /* orden de las areas Prestar atención a las " " */
@@ -228,10 +234,12 @@ body{
 @media (min-width:900px){
     .container{
         grid-template: 
-        "header header header"  30px
-        "izquierda main derecha"auto
-        "footer footer footer"  100px / 
-        200px   auto    200px;
+        "header header    header"  30px
+        ".      main        . "  auto
+        ".      derecha     . "  100px
+        ".      izquierda   . "  100px
+        "footer footer    footer"  100px / 
+        100px   auto       100px;
     }
 
     
