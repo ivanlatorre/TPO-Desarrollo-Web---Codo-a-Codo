@@ -54,11 +54,12 @@ body{
     background-color: aquamarine;
     display:flex ;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .lateral-izquierda{
     grid-area: izquierda;
-    background-color: beige;
+    background-color: #f6f6f6;
 }
 .lateral-deracha{
     grid-area: derecha;
@@ -177,10 +178,49 @@ body{
 .lateral-deracha {
     height: 50vh;
 }
+.lateral-deracha h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
 
-
-
-
+/* Iaquierda */
+.lateral-izquierda, h2, h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h3,p{
+    display: inline;
+}
+table{
+    width: 100%;
+    text-align: center;
+    box-shadow: 20px 20px 46px 15px rgba(0,0,0,0.31);
+    text-transform: uppercase;
+}
+.tr-medio, th {
+    background-color: #fff;
+}
+th {
+    padding: 20px 0;
+    font-style: italic;
+}
+.tr-punta{
+    background-color: #e8e8e8;
+}
+.horario{
+    font-style: italic;
+}
+/* footer */
+.footer{
+    text-align: center;
+    text-transform: uppercase;
+}
+.footer, a{
+    
+}
 
 /*Adaptacion a distintas pantallas*/
 @media (min-width:900px){
