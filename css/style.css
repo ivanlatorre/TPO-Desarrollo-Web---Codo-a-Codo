@@ -304,11 +304,11 @@ th {
     .container{
         /* ordenar las tablas del grid tempalte, respetar las columnas y su posición*/
         grid-template:
-        "header header"  
-        "main main" 
-        "derecha derecha" 
-        "izquierda izquierda" 
-        "footer footer"  
+        "header"  
+        "main " 
+        "derecha " 
+        "izquierda " 
+        "footer "  
          ;
         /* orden de las areas Prestar atención a las " " */
         /* la Altura va a la derecha y el Ancho despues del / respetando el orden de las columnas*/
