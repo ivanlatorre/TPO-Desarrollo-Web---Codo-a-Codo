@@ -65,23 +65,23 @@ body{
     grid-area: derecha;
     background-color: beige;
 
-    
+
 }
 .footer{
     grid-area: footer;
     background-color: rgb(66, 65, 65);
-    
+
 }
 .container {
     display: grid;
     gap: 5px;/*Separacion de los grid-area*/
     grid-template:
-        "header header     header     header"  
-        ".      main       main       .     "  
-        ".      derecha    derecha    .     "  
-        ".      izquierda  izquierda  .     "  
+        "header header     header     header"
+        ".      main       main       .     "
+        ".      derecha    derecha    .     "
+        ".      izquierda  izquierda  .     "
         "footer footer     footer     footer"
-    
+
     /* grid-template: /*Nombres para las areas*//*
         "header"    30px
         "main"      auto
@@ -152,14 +152,25 @@ body{
     display: none;
 }
 /* Main */
-.main .contenedor {
-    text-align: center;
+.main{
+    border: 100px;
 }
-.main .contenedor img {
-    /* width: 40%;
-    height: 50%; */
+.main .contenedor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+}
+
+/* .main .contenedor img {
+    width: 40%;
+    height: 50%;
     border-radius: 50%;
 
+} */
+.main img {
+    width: 30%;
 }
 .main .contenedor h1 {
     font-style: bold;
@@ -176,13 +187,42 @@ body{
 
 /* lateral-deracha */
 .lateral-deracha {
-    height: 50vh;
+    /* height: 50vh; */
+}
+.div-tarjetas{
+    /* background-color: #f6f6f6; */
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: -30px;
+
+}
+.tarjeta {
+    border-radius: 20%;
+    background-color: #f6f6f6;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: -1px 0px 5px #0000001f;
+    width: 50%;
+    
+}
+.tarjeta img{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    height:10vh ;
+    width: 10vw;
+}
+.tarjeta p {
+    font-size: 15px;
 }
 .lateral-deracha h2{
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    
+
 }
 
 /* Iaquierda */
@@ -219,17 +259,17 @@ th {
     text-transform: uppercase;
 }
 .footer, a{
-    
+
 }
 
 /*Adaptacion a distintas pantallas*/
 @media (min-width:900px){
     .container{
         grid-template:
-        "header header    header" 
-        ".      main      .     "  
-        ".     derecha    .     "  
-        ".     izquierda  .     "  
+        "header header    header"
+        ".      main      .     "
+        ".     derecha    .     "
+        ".     izquierda  .     "
         "footer footer    footer";
         grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
         grid-template-rows: 1fr 2fr 1fr ;
@@ -240,10 +280,10 @@ th {
         align-items: center;
     }
     .contenedor-der{
-       
+
     }
     .lateral-deracha .carousel-inner{
-        
+
         width: 600px;
     }
 }
@@ -259,7 +299,7 @@ th {
     }
     .logo img{
         height: 3.5vh;
-        
+
     }
 
     .nav-menu{
@@ -304,11 +344,11 @@ th {
     .container{
         /* ordenar las tablas del grid tempalte, respetar las columnas y su posición*/
         grid-template:
-        "header"  
-        "main " 
-        "derecha " 
-        "izquierda " 
-        "footer "  
+        "header"
+        "main "
+        "derecha "
+        "izquierda "
+        "footer "
          ;
         /* orden de las areas Prestar atención a las " " */
         /* la Altura va a la derecha y el Ancho despues del / respetando el orden de las columnas*/
