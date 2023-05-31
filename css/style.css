@@ -39,7 +39,7 @@ body{
     grid-area: header;
     background-color: #614c35;
     height: 35px;
-    position: fixed;
+    position: fixed !important;
     width: 100%;
     top: 0;
     left: 0;
