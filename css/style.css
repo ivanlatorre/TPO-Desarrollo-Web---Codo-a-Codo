@@ -4,7 +4,7 @@
     /* height: 100%; */
 }
 html{
-    height: 100vh;
+    /* height: 100vh; */
 
 }
 body{
@@ -13,7 +13,7 @@ body{
     min-height: 100%;/*para q use el 100% de la pagina*/
     /* padding: 90px 20px 0; */
     cursor: url(../img/mause1.png),auto;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: aqua;
     background-image: linear-gradient( rgba(131,58,180,1) 20%, rgba(253,29,29,0.8225665266106442) 50%, rgba(252,176,69,1) 70%), url(../img/catbird\ image1.png);
     background-size: 30%;
