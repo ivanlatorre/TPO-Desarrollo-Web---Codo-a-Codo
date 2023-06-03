@@ -37,8 +37,8 @@ body{
     display: flex;
     justify-content: center;
     grid-area: header;
-    background-color: #614c35;
-    height: 35px;
+    background-color: #00000069;
+    height: 5vh;
     position: fixed !important;
     width: 100%;
     top: 0;
@@ -51,19 +51,22 @@ body{
 }
 .main {
     grid-area: main;
-    background-color: aquamarine;
+    background-color: beige;
     display:flex ;
     justify-content: center;
     margin-top: 20px;
+    height: 100vh;
 }
 
 .lateral-izquierda{
     grid-area: izquierda;
     background-color: #f6f6f6;
+    height: 100vh;
 }
 .lateral-deracha{
     grid-area: derecha;
     background-color: beige;
+    height: 100vh;
 
 
 }
@@ -186,15 +189,13 @@ body{
 }
 
 /* lateral-deracha */
-.lateral-deracha {
-    /* height: 50vh; */
-}
+
 .div-tarjetas{
     /* background-color: #f6f6f6; */
     display: flex;
     gap: 30px;
     justify-content: space-around;
-    margin-top: -30px;
+    margin-top: -350px;
 
 }
 .tarjeta {
@@ -271,7 +272,7 @@ th {
         ".     derecha    .     "
         ".     izquierda  .     "
         "footer footer    footer";
-        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+        grid-template-columns: 1fr 2fr 2fr;
         grid-template-rows: 1fr 2fr 1fr ;
     }
     .lateral-deracha{
@@ -289,6 +290,7 @@ th {
 }
 
 @media(max-width: 768px){
+    
     .header{
         height: 30px;
     }
