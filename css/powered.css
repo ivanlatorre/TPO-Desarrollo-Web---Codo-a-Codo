@@ -21,19 +21,25 @@ header{
 }
 main{
     grid-area: "main";
+    height: 90vh;
 }
 nav{
-    align-items: center;
+    
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center;    
 }
 a{
-    justify-content: flex-start;
+    align-self: start;
+    justify-self: start;
+    
 }
 img{
     height: 2em;
     width: 2em;
 }
 h1{
+    
     text-align: center;
+    align-self: center;
 }
