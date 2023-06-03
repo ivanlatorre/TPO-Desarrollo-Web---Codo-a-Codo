@@ -7,52 +7,33 @@ body{
     gap: 5px;
     grid-template: 
         "header header  header"
-        ".      section .    ";
+        ".      main .    ";
        
 }
+
 header{
+
     background-color: #00000069;
     border-radius: 10%;
     width: 100%;
     grid-area: "header";
     height: 10vh;
 }
-nav,a{
-    display: flex;
-    flex-direction: row;
-
+main{
+    grid-area: "main";
+}
+nav{
     align-items: center;
+    display: flex;
+    justify-content: center;
 }
 a{
-    padding: 10px 10px;
-    margin-left: 5%;
-}
-h1{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    justify-self: center;
-    
+    justify-content: flex-start;
 }
 img{
     height: 2em;
     width: 2em;
 }
-section{
-    grid-area: "section";
-    background-color: beige;
-    border-radius: 5%;
-    height: 90vh;
-}
-section, h2{
+h1{
     text-align: center;
-}
-h2{
-    margin-top: 20px;
-}
-form{
-    margin: 5% 0;
-    text-align: center;
-    justify-content: center;
 }
